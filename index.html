@@ -1,36 +1,92 @@
 <!DOCTYPE html>
-<html lang="br">
+<html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="sortcut icon" href="/image/Logo TVin.PNG" type="image/x-icon" />
-    <link rel="stylesheet" href="/style/landing-page.css">
-    <title>Home - CCIT</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=
+    , initial-scale=1.0">
+  <title>Registro Funcionários</title>
+  <link rel="stylesheet" href="./style/chamados.css">
+  <link rel="stylesheet" href="./style/bootstrap.css">
 </head>
+
 <body>
-    
-    <hr>
-    <header id="header-page">
-            <a  href="/index.html" alt="TVin"><img id="logo-tvin" src="/image/Logo TVin.PNG" alt=""></a>
-            <img src="image/CCIT Central de Chamados Internos TVin.png" alt="">
-            <div></div><!--Div criada para manter elementos acima de forma ordenada na página-->
-    </header>
-    <hr>
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img class="logo-img navbar-brand" src="./image/logo.svg"
+          alt=""></a>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+      <button class="btn btn-outline-success" type="submit">ADD</button>
+    </div>
+    </div>
+  </nav>
 
-        <div id="menu">
-            <h3 style="padding-bottom: 0.2rem;">MENU</h3>
-             
-            <ul style="font-size: 1.8rem;">2022</ul>
+  <h2 align="center">Funcionários</h2>
 
-            <ol>
-                <ul>
-                    
-                    <li><a href="/chamados2022.php">Chamados</a></li>
-                    
-                </ul>
-            </ol>
-        </div>
+  <div class="table-colab">
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">N°</th>
+          <th scope="col">Nome</th>
+          <th scope="col">E-mail Corporativo</th>
+          <th scope="col">Setor</th>
+          <th scope="col">Função</th>
+          <th scope="col">Data de Nascimento</th>
+          <th scope="col">Editar</th>
+          <th scope="col">Excluir</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="line-table">
+          <th scope="row">1</th>
+          <td>Anderson Moreira</td>
+          <td>am@func.com.br</td>
+          <td>Financeiro</td>
+          <td>Analista Financeiro</td>
+          <td>13/02/1984</td>
+          <td><a href=""><img class="edit-img" src="./image/edit.png" alt=""></a></td>
+          <td><a href=""><img class="delete-img" src="./image/delete.svg" alt=""></a></td>
+        </tr>
+        <tr class="line-table">
+          <th scope="row">2</th>
+          <td>Lucas Tavares </td>
+          <td>lt@func.com.br</td>
+          <td>Financeiro</td>
+          <td>Contador</td>
+          <td>27/04/1973</td>
+          <td><a href=""><img class="edit-img" src="./image/edit.png" alt=""></a></td>
+          <td><a href=""><img class="delete-img" src="./image/delete.svg" alt=""></a></td>
+        </tr>
+        <tr class="line-table">
+          <th scope="row">3</th>
+          <td>Marcos Amorim</td>
+          <td>ma@func.com.br</td>
+          <td>Logística</td>
+          <td>Supervisor de Logística</td>
+          <td>25/10/1970</td>
+          <td><a href=""><img class="edit-img" src="./image/edit.png" alt=""></a></td>
+          <td><a href=""><img class="delete-img" src="./image/delete.svg" alt=""></a></td>
+        </tr>
+        <tr class="line-table">
+          <th scope="row">4</th>
+          <td>Marina Vieira</td>
+          <td>mv@func.com.br</td>
+          <td>RH</td>
+          <td>Analista de RH</td>
+          <td>01/05/1993</td>
+          <td><a href=""><img class="edit-img" src="./image/edit.png" alt=""></a></td>
+          <td><a href=""><img class="delete-img" src="./image/delete.svg" alt=""></a></td>
+        </tr>
+    </table>
+
+  </div>
 
 </body>
+
 </html>
